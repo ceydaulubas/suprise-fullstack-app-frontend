@@ -107,12 +107,12 @@ function SurpriseForm() {
                             <Form.Label className="text-success d-flex justify-content-between">
                                 Relative <span className="text-danger">*</span>
                             </Form.Label>
-                            {focusedField === 'relative' && ( // Burada 'relatie' yerine 'relative' yazılmalı
+                            {focusedField === 'relative' && (
                                 <small className="text-muted mb-2">Write the relative of that person...</small>
                             )}
                             <Form.Control
                                 type="text"
-                                name="relative" // Burada 'name' yerine 'relative' yazılmalı
+                                name="relative"
                                 value={formData.relative}
                                 onChange={handleChange}
                                 onFocus={handleFocus}
