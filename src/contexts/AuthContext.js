@@ -12,13 +12,13 @@ export const AuthProvider = ({ children }) => {
 
     const signUp = async (data) => {
         try {
-            const response = await axios.post("http://localhost:5001/api/users", data);
+            const response = await axios.post("http://localhost:5001/api/auth/signup", data);
 
             if (response.status !== 200) {
                 throw new Error("Signup failed!");
             }
-
             setIsAuthenticated(true);
+            await login(data);
         } catch (error) {
             console.error("Signup error:", error);
             throw error;
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (data) => {
         try {
-            const response = await axios.get("http://localhost:5001/api/users/:id", data);
+            const response = await axios.post("http://localhost:5001/api/auth/login", data);
 
             if (response.status !== 200) {
                 throw new Error("Login failed!");

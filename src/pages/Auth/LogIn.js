@@ -3,6 +3,7 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import AlertPopup from "../../components/AlertPopup";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = ({ setShowLogin }) => {
@@ -12,6 +13,9 @@ const Login = ({ setShowLogin }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [showErrorPopup, setShowErrorPopup] = useState(false);
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+  const navigate = useNavigate();
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -26,13 +30,17 @@ const Login = ({ setShowLogin }) => {
       });
       setLoading(false);
       setShowSuccessPopup(true);
+      // Clear the all value
+      email.value = "";
+      password.value = "";
+      navigate("/private");
     } catch (error) {
       setError(error.message);
       setLoading(false);
       setShowErrorPopup(true);
+
     }
   };
-
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -60,7 +68,7 @@ const Login = ({ setShowLogin }) => {
                 <span className="input-group-text">
                   <i className="material-icons">mail</i>
                 </span>
-                <Form.Control type="email" placeholder="Email" required />
+                <Form.Control type="email" name="email" placeholder="Email" required />
               </div>
             </Form.Group>
 

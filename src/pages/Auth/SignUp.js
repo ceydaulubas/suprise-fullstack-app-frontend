@@ -3,6 +3,8 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import AlertPopup from "../../components/AlertPopup";
+import { useNavigate } from "react-router-dom";
+
 
 const SignUpForm = ({ setShowLogin }) => {
   const { signUp } = useAuth();
@@ -11,6 +13,7 @@ const SignUpForm = ({ setShowLogin }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [showErrorPopup, setShowErrorPopup] = useState(false);
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,6 +28,12 @@ const SignUpForm = ({ setShowLogin }) => {
         password: password.value,
       });
       setShowSuccessPopup(true);
+
+      // Clear the all value
+      username.value = "";
+      email.value = "";
+      password.value = "";
+      navigate("/private");
     } catch (error) {
       setError(error.message);
       setShowErrorPopup(true);
