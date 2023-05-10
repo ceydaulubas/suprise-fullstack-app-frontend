@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
 import AlertPopup from './AlertPopup';
 import axios from 'axios';
+import LoadingSpinner from './LoadingSpinner';
 
 function SurpriseForm() {
     const [formData, setFormData] = useState({ email: '', name: '', theme: '', relative: '' });
@@ -140,9 +141,7 @@ function SurpriseForm() {
                         </Form.Group>
                         <Button className="w-100 mt-3" variant="success" type="submit" disabled={submitting}>
                             {submitting ? (
-                                <Spinner animation="border" size="sm" role="status">
-                                    <span className="sr-only">Loading...</span>
-                                </Spinner>
+                                <LoadingSpinner />
                             ) : (
                                 'Send'
                             )}
