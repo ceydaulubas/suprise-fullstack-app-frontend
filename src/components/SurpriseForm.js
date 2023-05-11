@@ -41,13 +41,12 @@ function SurpriseForm() {
             // Update the following line
             const generatedText = response.data.content;
 
-            //Satrt to send e-mail 
+            //Start to send e-mail 
             const emailResponse = await axios.post('http://localhost:5001/api/sendEmail', {
                 email: formData.email,
                 name: formData.name,
                 relative: formData.relative,
                 theme: formData.theme,
-                // subject: 'Formdan Gelen Mesaj',
                 message: generatedText,
 
             });
@@ -55,7 +54,7 @@ function SurpriseForm() {
             console.log('The situation of sending email:', emailResponse.data);
 
             // Show success popup
-            setPopupConfig({ title: 'Success', message: 'Successfully sent!', variant: 'success' });
+            setPopupConfig({ title: 'Successfully sent the following message', message: `${generatedText}`, variant: 'success' });
         } catch (error) {
             // Show error popup
             setPopupConfig({ title: 'Error', message: error.message, variant: 'danger' });
