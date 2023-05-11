@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import AlertPopup from './AlertPopup';
 import axios from 'axios';
 import LoadingSpinner from './LoadingSpinner';
@@ -53,7 +52,7 @@ function SurpriseForm() {
 
             });
 
-            console.log('E-posta gönderme durumu:', emailResponse.data);
+            console.log('The situation of sending email:', emailResponse.data);
 
             // Show success popup
             setPopupConfig({ title: 'Success', message: 'Successfully sent!', variant: 'success' });
@@ -109,7 +108,7 @@ function SurpriseForm() {
                                 Relative <span className="text-danger">*</span>
                             </Form.Label>
                             {focusedField === 'relative' && (
-                                <small className="text-muted mb-2">Write the relative of that person...</small>
+                                <small className="text-muted mb-2">Write your relationship with the person you are sending. ex: my mother, father, lover, friend)</small>
                             )}
                             <Form.Control
                                 type="text"

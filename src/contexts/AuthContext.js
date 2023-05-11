@@ -9,6 +9,7 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [token, setToken] = useState(null); // JWT token
 
     const signUp = async (data) => {
         try {
@@ -17,6 +18,7 @@ export const AuthProvider = ({ children }) => {
             if (response.status !== 200) {
                 throw new Error("Signup failed!");
             }
+            setToken(response.data.token); // Save the JWT token
             setIsAuthenticated(true);
             await login(data);
         } catch (error) {
@@ -32,7 +34,7 @@ export const AuthProvider = ({ children }) => {
             if (response.status !== 200) {
                 throw new Error("Login failed!");
             }
-
+            setToken(response.data.token); // Save the JWT token
             setIsAuthenticated(true);
         } catch (error) {
             console.error("Login error:", error);
@@ -40,10 +42,19 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+    const logout = () => {
+        setToken(null);
+        setIsAuthenticated(false);
+
+    };
+
+
     const value = {
         isAuthenticated,
         signUp,
         login,
+        logout,
+        token,
     };
 
     return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

@@ -1,0 +1,29 @@
+.landing-page {
+  background: url("https://static.vecteezy.com/system/resources/previews/009/740/387/original/letter-and-paper-cut-elements-in-shape-of-heart-flying-on-soft-and-sweet-background-symbols-of-love-for-happy-valentine-s-day-birthday-mothers-day-greeting-card-design-free-vector.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-color: rgba(83, 196, 211, 0.384);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-container {
+  max-width: 600px;
+}
+
+.message {
+  color: green;
+}
+.title {
+  color: rgb(240, 6, 143);
+}
+
+.invite {
+  color: rgb(240, 6, 143);
+}
