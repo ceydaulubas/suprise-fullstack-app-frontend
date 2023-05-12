@@ -18,8 +18,9 @@ function App() {
           <Route path="/private" element={<PrivateRoute />}>
             <Route path="mainpage" element={<MainPage />} />
             <Route path="surpriseform" element={<SurpriseForm />} />
-            <Route path="allsurprises" element={<AllSurprises />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="allsurprises" element={<AllSurprises />} />
+
           </Route>
         </Routes>
       </Router>

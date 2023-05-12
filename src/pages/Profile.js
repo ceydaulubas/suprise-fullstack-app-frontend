@@ -22,7 +22,7 @@ const Profile = () => {
     };
 
     return (
-        <Container fluid style={{ minHeight: "100vh", backgroundColor: "rgba(80, 196, 211, 0.194)" }}>
+        <Container fluid style={{ minHeight: "100vh" }}>
             <Row className="justify-content-center">
                 <Col xs={12} md={6} lg={4}>
                     <Card
@@ -53,6 +53,7 @@ const Profile = () => {
             </Row>
         </Container>
     );
+
 };
 
 export default Profile;

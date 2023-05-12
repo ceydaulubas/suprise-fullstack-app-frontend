@@ -19,8 +19,8 @@ const NavBar = () => {
       <Navbar.Collapse id="navbar-nav" className="justify-content-end" style={{ marginRight: '40px' }}>
         <Nav>
           <Nav.Link as={Link} to="/private/surpriseform">MakeSurprise</Nav.Link>
+          <Nav.Link as={Link} to="/private/allsurprises">Your Lists</Nav.Link>
           <Nav.Link as={Link} to="/private/profile">Profile</Nav.Link>
-          <Nav.Link as={Link} to="/private/yourlist">Your Lists</Nav.Link>
           <Nav.Link as={Link} to="/">Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>

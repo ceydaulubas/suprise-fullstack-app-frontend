@@ -27,7 +27,7 @@ function SurpriseForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting(true);
-        console.log(formData);
+        console.log('formData', formData);
 
         // Connect to the backend and send the data here.
         try {
@@ -38,7 +38,7 @@ function SurpriseForm() {
             const response = await axios.post(apiUrl, formData);
 
             // You can access the response data using response.data
-            console.log(response.data);
+            console.log('response.data', response.data);
 
             // Update the following line
             const generatedText = response.data.content;
@@ -70,7 +70,7 @@ function SurpriseForm() {
         <Container className="mt-5">
             <Row>
                 <Col xs={12} md={{ span: 6, offset: 3 }}>
-                    <h2 className="text-success mb-4">Form Information</h2>
+                    <h2 className=" mb-4" style={{ color: '#13c2c2' }}>Form Information</h2>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group>
                             <Form.Label className="text-success d-flex justify-content-between">
@@ -139,7 +139,7 @@ function SurpriseForm() {
                                 <option value="father's day">Father's Day</option>
                             </Form.Control>
                         </Form.Group>
-                        <Button className="w-100 mt-3" variant="success" type="submit" disabled={submitting}>
+                        <Button className="w-100 mt-3" variant="success" type="submit" disabled={submitting} style={{ backgroundColor: '#13c2c2' }}>
                             {submitting ? (
                                 <LoadingSpinner />
                             ) : (

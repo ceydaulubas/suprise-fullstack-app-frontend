@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
 
     const getSurprises = async () => {
         try {
-            const response = await axios.post("http://localhost:5001/api/allsurprises/", { email: email });
+            const response = await axios.get(`http://localhost:5001/api/allsurprises?email=${email}`);
 
             if (response.status !== 200) {
                 throw new Error("Failed to get surprises!");

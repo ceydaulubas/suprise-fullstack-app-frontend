@@ -1,33 +1,57 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import { Table, Container, Row, Col } from 'react-bootstrap';
 
 const AllSurprises = () => {
     const { getSurprises } = useAuth();
     const [surprises, setSurprises] = useState([]);
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
 
     useEffect(() => {
         (async () => {
             try {
                 const surprisesData = await getSurprises();
                 setSurprises(surprisesData);
+                console.log("surprisesData", surprisesData)
             } catch (error) {
                 console.error("Error getting surprises:", error);
             }
         })();
     }, [getSurprises]);
 
+    console.log("surprises", surprises)
     return (
         <div>
-            <h1>Your Surprises</h1>
-            {surprises.map(surprise => (
-                <div key={surprise._id}>
-                    <h2>{surprise.name}</h2>
-                    <p>{surprise.theme}</p>
-                    {/* Add more fields as needed... */}
-                </div>
-            ))}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <h1 style={{ color: '#13c2c2', margin: "2rem" }}>Your All Surprises</h1>
+            </div>
+            <Table striped bordered hover >
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Theme</th>
+                        <th>Relative</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {surprises.map(surprise => (
+                        <tr key={surprise._id}>
+                            <td>{surprise.name}</td>
+                            <td>{surprise.email}</td>
+                            <td>{surprise.theme}</td>
+                            <td>{surprise.relative}</td>
+                            <td>{new Date(surprise.updatedAt).toLocaleDateString(undefined, options)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </Table>
         </div>
     );
 };
 
 export default AllSurprises;
+

@@ -18,7 +18,7 @@ const MainPage = () => {
                         <p className="text-muted">
                             Sed iaculis consectetur ipsum, sed ultricies risus feugiat nec. Pellentesque faucibus lectus metus, eu facilisis arcu tincidunt non. Nam suscipit sollicitudin risus, a bibendum nunc. Integer ac semper purus, ut sagittis lorem. Sed volutpat pharetra enim, in varius tellus semper eu. Vestibulum bibendum, mauris ac pulvinar ullamcorper, ex neque congue turpis, eget fringilla velit orci at nisi.
                         </p>
-                        <Link to="/private/surpriseform" className="btn btn-primary">Make Surprise</Link>
+                        <Link to="/private/surpriseform" className="btn" style={{ backgroundColor: '#13c2c2' }}><b>Make Surprise</b></Link>
                     </div>
                 </Col>
                 <Col md={6} className="p-0">
