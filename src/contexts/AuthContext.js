@@ -45,6 +45,7 @@ export const AuthProvider = ({ children }) => {
             }
             setToken(response.data.token); // Save the JWT token
             setEmail(data.email); // Save user email
+
             setRegistrationDate(new Date()); // Save registration date
             setIsAuthenticated(true);
             console.log("data", data)

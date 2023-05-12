@@ -6,7 +6,7 @@ import { useAuth } from "../contexts/AuthContext"
 
 function SurpriseForm() {
     const { email } = useAuth();
-    const [formData, setFormData] = useState({ senderemail: email, email: '', name: '', theme: '', relative: '' });
+    const [formData, setFormData] = useState({ senderemail: email, email: '', name: '', theme: '', relative: '', sender: '' });
     const [focusedField, setFocusedField] = useState('');
     const [submitting, setSubmitting] = useState(false);
 
@@ -138,6 +138,26 @@ function SurpriseForm() {
                                 <option value="father's day">Father's Day</option>
                             </Form.Control>
                         </Form.Group>
+
+                        <Form.Group>
+
+                            <Form.Label className="text-success d-flex justify-content-between">
+                                Who you are <span className="text-danger">*</span>
+                            </Form.Label>
+                            {focusedField === 'relative' && (
+                                <small className="text-muted mb-2">Write your name,nickname or fun name for the receiver)</small>
+                            )}
+                            <Form.Control
+                                type="text"
+                                name="sender"
+                                value={formData.sender}
+                                onChange={handleChange}
+                                onFocus={handleFocus}
+                                required
+                            />
+                        </Form.Group>
+
+
                         <Button className="w-100 mt-3" variant="success" type="submit" disabled={submitting} style={{ backgroundColor: '#13c2c2' }}>
                             {submitting ? (
                                 <LoadingSpinner />

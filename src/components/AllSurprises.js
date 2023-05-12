@@ -30,7 +30,7 @@ const AllSurprises = () => {
             <Table striped bordered hover >
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Receiver</th>
                         <th>Email</th>
                         <th>Theme</th>
                         <th>Relative</th>
