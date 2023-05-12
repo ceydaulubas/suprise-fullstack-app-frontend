@@ -8,15 +8,16 @@ const MainPage = () => {
             <Row>
                 <Col md={6} className="d-flex align-items-center">
                     <div className="text-center">
-                        <h1 className="mb-4">Welcome to My App</h1>
+                        <h2 className="mb-4">Welcome to Happy Celebrations Hub!</h2>
                         <p className="text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus justo a luctus placerat. Nulla facilisi. Nam malesuada turpis eget magna cursus consequat. Curabitur fermentum velit eu orci volutpat dapibus. Sed iaculis eget lacus non viverra. Morbi ut mi quis purus lacinia lobortis. Fusce volutpat, erat eget viverra tincidunt, ex lorem eleifend nulla, auctor viverra sapien diam at tortor. Phasellus mattis enim vitae ante facilisis feugiat. Integer ac quam sed risus sollicitudin efficitur at at lacus.
+                            The purpose of this website is to facilitate the celebration of special occasions that often seem less important to busy individuals. Many people either forget or don't know how to celebrate the special occasions of their loved ones such as parents, friends, or partners. Therefore, this website uses the Chat GPT API to generate personalized messages for your loved one's special day by simply filling out a form, and sends that message to their email address.
                         </p>
                         <p className="text-muted">
-                            Vivamus cursus quam a ligula scelerisque, et consectetur ipsum tristique. Curabitur fermentum facilisis enim, sit amet convallis nisl aliquet nec. Quisque rhoncus lacinia odio, at finibus velit pulvinar non. Cras viverra metus non erat ullamcorper, in gravida nunc maximus. Suspendisse at erat efficitur, placerat erat id, lobortis leo. Integer elementum nibh eget justo commodo lobortis.
+                            As a result, we help alleviate the burden on busy individuals' to-do lists through this website.
                         </p>
+                        <h6>Now, go ahead and give it a try!</h6>
                         <p className="text-muted">
-                            Sed iaculis consectetur ipsum, sed ultricies risus feugiat nec. Pellentesque faucibus lectus metus, eu facilisis arcu tincidunt non. Nam suscipit sollicitudin risus, a bibendum nunc. Integer ac semper purus, ut sagittis lorem. Sed volutpat pharetra enim, in varius tellus semper eu. Vestibulum bibendum, mauris ac pulvinar ullamcorper, ex neque congue turpis, eget fringilla velit orci at nisi.
+                            Make your loved one happy with beautiful words on their upcoming special day!
                         </p>
                         <Link to="/private/surpriseform" className="btn" style={{ backgroundColor: '#13c2c2' }}><b>Make Surprise</b></Link>
                     </div>
