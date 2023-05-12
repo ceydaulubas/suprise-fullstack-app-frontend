@@ -9,11 +9,11 @@ As a result, we help alleviate the burden on busy individuals' to-do lists throu
 ![Alt text](URL_TO_IMAGE)
 
 <p>
- <img src="[your_relative_path_here](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906868/register%20form/CelebrationsHub1_z7mpbe.png)" width="350" title="Welcoming Page">
- <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906870/register%20form/CelebrationsHub2_zc9ube.png)" width="350" title="Register Page">
- <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906873/register%20form/CelebrationsHub3_b5zmue.png)" width="350" title="Home Page">
- <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906874/register%20form/CelebrationsHub4_wpl0u7.png)" width="350" title="Surprise Form Submit">
- <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906960/register%20form/CelebrationsHub5_pphamu.png)" width="350" title="Your Surprise List">
+ <img src="(https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906868/register%20form/CelebrationsHub1_z7mpbe.png)" width="350" title="Welcoming Page">
+ <img src="(https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906870/register%20form/CelebrationsHub2_zc9ube.png)" width="350" title="Register Page">
+ <img src="(https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906873/register%20form/CelebrationsHub3_b5zmue.png)" width="350" title="Home Page">
+ <img src="(https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906874/register%20form/CelebrationsHub4_wpl0u7.png)" width="350" title="Surprise Form Submit">
+ <img src="(https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906960/register%20form/CelebrationsHub5_pphamu.png)" width="350" title="Your Surprise List">
 </p>
 
 ## Installation
