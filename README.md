@@ -40,7 +40,7 @@ Finally, when you log out, you exit the website.
 
 This application was built using the following technologies:
 
--React.js
+-React.js (Private Route, Context Api)
 
 -Botstrap
 
