@@ -37,7 +37,7 @@ const SignUpForm = ({ setShowLogin }) => {
       username.value = "";
       email.value = "";
       password.value = "";
-      navigate("/private");
+      navigate("/private/mainpage");
     } catch (error) {
       setError(error.message);
       setShowErrorPopup(true);

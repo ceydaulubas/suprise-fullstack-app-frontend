@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 const NavBar = () => {
   return (
     <Navbar expand="lg" className="justify-content-between" bg="light">
-      <Navbar.Brand as={Link} to="/" style={{ marginLeft: '40px' }}>
+      <Navbar.Brand as={Link} to="/private/mainpage" style={{ marginLeft: '40px' }}>
         <img
           src={logo}
           width="40"
@@ -18,10 +18,10 @@ const NavBar = () => {
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav" className="justify-content-end" style={{ marginRight: '40px' }}>
         <Nav>
-          <Nav.Link as={Link} to="/makesurprise">MakeSurprise</Nav.Link>
-          <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
-          <Nav.Link as={Link} to="/yourlist">Your List</Nav.Link>
-          <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
+          <Nav.Link as={Link} to="/private/surpriseform">MakeSurprise</Nav.Link>
+          <Nav.Link as={Link} to="/private/profile">Profile</Nav.Link>
+          <Nav.Link as={Link} to="/private/yourlist">Your Lists</Nav.Link>
+          <Nav.Link as={Link} to="/">Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

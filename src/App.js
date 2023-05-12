@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SurpriseForm, NavBar } from "./components/index"
-import { Login, SignUpForm, LandingPage } from "./pages/index"
+import { SurpriseForm, NavBar, AllSurprises } from "./components/index"
+import { Login, SignUpForm, LandingPage, Profile, MainPage } from "./pages/index"
 
 import { AuthProvider } from "./contexts/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
@@ -15,9 +15,11 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUpForm />} />
-          <Route path="private" element={<PrivateRoute />}>
-            <Route path="*" element={<NavBar />} />
-            <Route index element={<SurpriseForm />} />
+          <Route path="/private" element={<PrivateRoute />}>
+            <Route path="mainpage" element={<MainPage />} />
+            <Route path="surpriseform" element={<SurpriseForm />} />
+            <Route path="allsurprises" element={<AllSurprises />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         </Routes>
       </Router>
@@ -26,4 +28,3 @@ function App() {
 }
 
 export default App;
-

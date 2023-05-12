@@ -12,7 +12,7 @@ const PrivateRoute = () => {
             <Outlet />
         </Fragment>
     ) : (
-        <Navigate to="/" replace />
+        <Navigate to="/login" replace />
     );
 };
 

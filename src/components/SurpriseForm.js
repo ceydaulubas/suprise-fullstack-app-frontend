@@ -3,9 +3,11 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import AlertPopup from './AlertPopup';
 import axios from 'axios';
 import LoadingSpinner from './LoadingSpinner';
+import { useAuth } from "../contexts/AuthContext"
 
 function SurpriseForm() {
-    const [formData, setFormData] = useState({ email: '', name: '', theme: '', relative: '' });
+    const { email } = useAuth();
+    const [formData, setFormData] = useState({ senderemail: email, email: '', name: '', theme: '', relative: '' });
     const [focusedField, setFocusedField] = useState('');
     const [submitting, setSubmitting] = useState(false);
 

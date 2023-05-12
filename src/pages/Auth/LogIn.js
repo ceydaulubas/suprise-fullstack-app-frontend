@@ -35,7 +35,7 @@ const Login = () => {
       // Clear the all value
       email.value = "";
       password.value = "";
-      navigate("/private");
+      navigate("/private/mainpage");
     } catch (error) {
       setError(error.message);
       setLoading(false);
