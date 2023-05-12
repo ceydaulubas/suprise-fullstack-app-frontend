@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
-import LoadingSpinner from "../../components/LoadingSpinner";
-import AlertPopup from "../../components/AlertPopup";
+import { LoadingSpinner, AlertPopup } from "../../components/index"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import '../../common.css'

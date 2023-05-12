@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { Table, Container, Row, Col } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 
 const AllSurprises = () => {
     const { getSurprises } = useAuth();

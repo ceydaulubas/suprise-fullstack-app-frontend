@@ -1,5 +1,5 @@
-import AlertPopup from "./AlertPopup";
-import LoadingSpinner from "./LoadingSpinner";
+import AlertPopup from "./common/AlertPopup";
+import LoadingSpinner from "./common/LoadingSpinner";
 import PrivateRoute from "./PrivateRoute";
 import SurpriseForm from "./SurpriseForm";
 import NavBar from "./NavBar/NavBar";
