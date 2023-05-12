@@ -28,8 +28,6 @@ export const AuthProvider = ({ children }) => {
             setRegistrationDate(new Date()); // Save registration date
             setIsAuthenticated(true);
             await login(data);
-
-            console.log("data", data)
         } catch (error) {
             console.error("Signup error:", error);
             throw error;
@@ -48,7 +46,6 @@ export const AuthProvider = ({ children }) => {
 
             setRegistrationDate(new Date()); // Save registration date
             setIsAuthenticated(true);
-            console.log("data", data)
         } catch (error) {
             console.error("Login error:", error);
             throw error;

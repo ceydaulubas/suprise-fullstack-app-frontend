@@ -26,7 +26,6 @@ function SurpriseForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting(true);
-        console.log('formData', formData);
 
         // Connect to the backend and send the data here.
         try {
