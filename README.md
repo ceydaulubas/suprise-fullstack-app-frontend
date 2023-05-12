@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Happy Celebrations Hub!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this website is to facilitate the celebration of special occasions that often seem less important to busy individuals. Many people either forget or don't know how to celebrate the special occasions of their loved ones such as parents, friends, or partners. Therefore, this website uses the Chat GPT API to generate personalized messages for your loved one's special day by simply filling out a form, and sends that message to their email address.
 
-## Available Scripts
+As a result, we help alleviate the burden on busy individuals' to-do lists through this website.
 
-In the project directory, you can run:
+![Welcoming Page](URL_TO_IMAGE)
+![Refgister Page](URL_TO_IMAGE)
+![Alt text](URL_TO_IMAGE)
 
-### `npm start`
+<p>
+ <img src="[your_relative_path_here](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906868/register%20form/CelebrationsHub1_z7mpbe.png)" width="350" title="Welcoming Page">
+ <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906870/register%20form/CelebrationsHub2_zc9ube.png)" width="350" title="Register Page">
+ <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906873/register%20form/CelebrationsHub3_b5zmue.png)" width="350" title="Home Page">
+ <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906874/register%20form/CelebrationsHub4_wpl0u7.png)" width="350" title="Surprise Form Submit">
+ <img src="[your_relative_path_here_number_2_large_name](https://res.cloudinary.com/dxqyvjf5r/image/upload/v1683906960/register%20form/CelebrationsHub5_pphamu.png)" width="350" title="Your Surprise List">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To install and run this application on your local machine, follow these steps:
 
-### `npm test`
+-Clone this repository to your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Navigate to the root directory of the cloned repository in your terminal.
 
-### `npm run build`
+-Run `npm install` to install the necessary dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Run `npm start` to start the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once the application is running, open a web browser and navigate to [http://localhost:3000](http://localhost:3000) to access the homepage. Upon opening the page, you will be greeted with a register or login screen. If you have not registered before, you should do so. If you have registered, you should log in by correctly entering your information. After logging in, there is a text explaining the primary purpose of this website. By reading this text, you will understand the intended use of this website.
 
-### `npm run eject`
+When you press the "Make a Surprise" button, you will fill in the details of the person whose special day you will celebrate, then press the "Send" button. Upon successful submission of this form, an email related to the day you selected will be sent to the sender's email address.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In addition, on the "Your List" page, you can see who you sent emails to and on which dates. Your information is located in the "Profile" section. The addition of "Edit" and "Delete" functions is planned for future updates.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Finally, when you log out, you exit the website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This application was built using the following technologies:
 
-## Learn More
+-React.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-Botstrap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-Material UI for only icons
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Axios

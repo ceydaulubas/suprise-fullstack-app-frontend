@@ -14,14 +14,13 @@ const AllSurprises = () => {
             try {
                 const surprisesData = await getSurprises();
                 setSurprises(surprisesData);
-                console.log("surprisesData", surprisesData)
             } catch (error) {
                 console.error("Error getting surprises:", error);
             }
         })();
     }, [getSurprises]);
 
-    console.log("surprises", surprises)
+
     return (
         <div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
