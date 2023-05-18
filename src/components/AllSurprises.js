@@ -20,7 +20,7 @@ const AllSurprises = () => {
         })();
     }, [getSurprises]);
 
-
+    console.log("surprises", surprises)
     return (
         <div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -33,6 +33,7 @@ const AllSurprises = () => {
                         <th>Email</th>
                         <th>Theme</th>
                         <th>Relative</th>
+                        <th>Message</th>
                         <th>Date</th>
                     </tr>
                 </thead>
@@ -43,6 +44,7 @@ const AllSurprises = () => {
                             <td>{surprise.email}</td>
                             <td>{surprise.theme}</td>
                             <td>{surprise.relative}</td>
+                            <td>{surprise.message}</td>
                             <td>{new Date(surprise.updatedAt).toLocaleDateString(undefined, options)}</td>
                         </tr>
                     ))}
